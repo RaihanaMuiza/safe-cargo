@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import Header from '../Components/Header';
-import landingImage from '../Assets/LandingImage2.jpg';
+import landingImage from '../Assets/LandingImage4.jpg';
 
 const LandingPage = () => {
   return (
@@ -43,8 +43,8 @@ const LandingPage = () => {
           variant="h6"
           color="white"
           sx={{
-            fontStyle: 'italic',
-            fontFamily: `'Caveat', cursive`, 
+            // fontStyle: 'italic',
+            fontFamily: 'Montserrat, sans-serif', 
             mt: 2,
             textAlign: 'center',
           }}

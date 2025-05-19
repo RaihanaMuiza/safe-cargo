@@ -7,7 +7,7 @@ const pages = [
   'Home',
   'About Us',
   'Our Services',
-  'Blogs',
+  'Our Blogs',
 ];
 
 const FullScreenNav = ({ open, onClose }) => {
@@ -19,6 +19,8 @@ const FullScreenNav = ({ open, onClose }) => {
   if (label === 'Home') navigate('/');
   else if (label === 'Our Services') navigate('/services');
   else if (label === 'About Us') navigate('/about');
+  else if (label === 'Our Blogs') navigate('/blogs');
+
 };
   if (!open) return null;
 
