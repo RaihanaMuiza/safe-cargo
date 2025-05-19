@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Box, Typography, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from 'react-router-dom';
@@ -8,27 +8,18 @@ const pages = [
   'About Us',
   'Our Services',
   'Blogs',
-  'Our Clients',
-  'Footer',
 ];
 
 const FullScreenNav = ({ open, onClose }) => {
   const navigate = useNavigate();
 
-  const handleClick = (label) => {
-    onClose();
+ const handleClick = (label) => {
+  onClose();
 
-    if (label === 'Our Services') {
-      navigate('/services');
-    }
-
-    if (label === 'Home') {
-      navigate('/');
-    }
-
-    // Add more navigation routes here if needed
-  };
-
+  if (label === 'Home') navigate('/');
+  else if (label === 'Our Services') navigate('/services');
+  else if (label === 'About Us') navigate('/about');
+};
   if (!open) return null;
 
   return (
