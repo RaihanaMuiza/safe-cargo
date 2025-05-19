@@ -43,7 +43,7 @@ const FullScreenNav = ({ open, onClose }) => {
         transition: 'transform 0.5s ease-in-out',
       }}
     >
-      {/* Close Button */}
+      
       <IconButton
         onClick={onClose}
         sx={{
@@ -56,7 +56,7 @@ const FullScreenNav = ({ open, onClose }) => {
         <CloseIcon fontSize="large" />
       </IconButton>
 
-      {/* Navigation Items */}
+     
       {pages.map((page, index) => (
         <Typography
           key={index}
